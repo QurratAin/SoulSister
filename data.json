@@ -1,6 +1,6 @@
 {
     "Travel and Event Planning Services": {
-        "Sapna Travel Agency": {
+        "TravelOnly with Sapna": {
             "Recommendations": {
                 "Positive": [
                     "2025-02-20 11:37:00: Just wanted to give a shout out for @~Sapna. I had been planning a family trip for a long time and decided on a cruise. She was so patient with helping out in finding the right options in our budget and with myriad conditions, such as a toddler traveler. Would highly recommend her for planning your next trip."
@@ -24,10 +24,24 @@
             "Suggestions": [
                 "2025-03-01 09:25:00: Looking to book a ticket to India"
             ]
+        },
+        "SAWC Planners":{
+            "Business Information":[
+                "Phone: 6479290435"
+            ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
         }
     },
     "Fitness and Wellness": {
         "Traditional Ashtanga Yoga Shala": {
+            "Business Information":[
+                "Phone: 437 410 9848",
+                "Insta: https://www.instagram.com/the_ashtanga_yog_shala/"
+            ],
             "Recommendations": {
                 "Positive": [
                     "2025-02-20 15:33:00: Welcome to the group @~Traditional Ashtanga Yoga Shala ... I had the most amazing yoga class with her today. Being someone who does yoga 3 days a week, I was just stumped by her knowledge and dedication to the yoga practice..",
@@ -36,10 +50,53 @@
                 "Negative": []
             },
             "Suggestions": []
+        },
+        "Flawthentic Me Coaching":{
+            "Business Information":[
+                "Phone: 403-909-4915",
+                "Insta: https://www.instagram.com/sunny_lamba"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Renue Me":{
+            "Business Information":[
+                "Phone: 6472209171"
+	    ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Nandini's Fitness Club":{
+            "Business Information":[
+                "Phone: 3658898790",
+                "Insta: https://www.instagram.com/nandini_fitnessclub"
+	    ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Poorva Chaturvedi":{
+            "Business Information":[
+                "Email: pcfitnesscoach@gmail.com",
+                "Insta: https://www.instagram.com/itspoorvasharma"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
         }
     },
     "Beauty and Personal Care": {
-        "Pooja\u2019s Beauty Spa": {
+        "Pooja Beauty Spa": {
             "Business Information": [
                 "https://poojasbeautyspa.ca"
             ],
@@ -50,6 +107,103 @@
                 "Negative": []
             },
             "Suggestions": []
+        },
+        "LA BEAUTÉ LOUNGE":{
+            "Business Information":[
+                "Phone: 4376073729",
+                "Insta: https://www.instagram.com/beautelounge.la"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Blissful Beauty Clinic ":{
+            "Business Information":[
+                "Phone: 2368380003",
+                "Insta: https://www.instagram.com/blissfulbeauty_clinic"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "The Glow Secret Studio":{
+            "Business Information":[
+                "Phone: 647-864-3020",
+                "Insta: https://www.instagram.com/_theglowsecret"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Earth Lover's Soapery":{
+            "Business Information":[
+                "Email: EarthLoverSoapery@gmail.com",
+                "Insta: http://www.instagram.com/EarthLoversSoapery"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Quach's Hair Care":{
+            "Business Information":[
+                "Phone: 416-4326567",
+                "FB: https://www.facebook.com/share/15oF7wjybb/"
+    	    ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Y.A. Nails (Yasmin Al-Baiari)":{
+            "Business Information":[
+                "Phone: (365) 888-7229",
+                "Insta: https://www.instagram.com/ya.nail"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "PETRA BEAUTY SALON":{
+            "Business Information":[
+                "Phone: 548-468-3714"
+	    ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "The parfume Story":{
+            "Business Information":[
+                "Phone: 4372403395, 4372166766",
+                "Site: https://theparfumstory.ca/"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Happy Aura":{
+            "Business Information":[
+                "Insta: https://www.instagram.com/happyaura.ca"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
         }
     },
     "Legal and Financial Services": {
@@ -61,6 +215,29 @@
             "Suggestions": [
                 "2025-02-23 09:41:00: Congratulations!!!! You MUST speak to @~Masha Brar"
             ]
+        },
+        "Shivani Gupta":{
+            "Business Information":[
+                "Phone: 647-834-4266",
+                "Email: shivani@comfortmortgage.ca",
+                "Insta: https://www.instagram.com/comfort.mortgage/",
+                "Site: http://www.comfortmortgage.ca/"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Ramita Singh":{
+            "Business Information":[
+                "Phone: 416-858-3526"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
         }
     },
     "Child Services": {
@@ -72,6 +249,39 @@
                 "Negative": []
             },
             "Suggestions": []
+        },
+        "Oakville STEM Learning":{
+            "Business Information":[
+                "Phone: 289-276-7677",
+                "FB: https://www.facebook.com/share/p/1GpX4MtLoy/",
+                "Site: http://www.oakvillestemlearning.com/"
+    	    ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Sandhiya":{
+            "Business Information":[
+                "Phone: 3657397990"
+    	    ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Malini's Art Studio":{
+            "Business Information":[
+                "Phone: 437-220-8336",
+                "Insta: https://www.instagram.com/malinisartstudio"
+    	    ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
         }
     },
     "Home Services": {
@@ -83,12 +293,37 @@
                 "Negative": []
             },
             "Suggestions": []
+        },
+        "Renov kitchen and Bath":{
+            "Business Information":[
+                "Phone: 4372403395",
+                "Insta: https://www.instagram.com/renovkitchenbath",
+                "Site: http://www.renovkitchenbath.ca/"
+	    ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Benjamin Moore Colour Coders":{
+            "Business Information":[
+                "Phone: 647-919-9973",
+                "Insta: https://www.instagram.com/colourcoders",
+                "Site: http://colourcoders.ca/"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
         }
     },
     "Food and Beverage": {
-        "Radhika's Home Baking": {
+        "Yummy Bliss by Radhika": {
             "Business Information": [
-                "https://www.instagram.com/yummybliss_byradhika?igsh=MTcxYWtlMmMyNmdvaA%3D%3D&utm_source=qr"
+                "Phone: 416-890-4103",
+                "Insta: https://www.instagram.com/yummybliss_byradhika?igsh=MTcxYWtlMmMyNmdvaA%3D%3D&utm_source=qr"
             ],
             "Recommendations": {
                 "Positive": [
@@ -97,6 +332,236 @@
                 "Negative": []
             },
             "Suggestions": []
+        },
+        "Ruhi's Kitchen":{
+            "Business Information":[
+                "Phone: 365-338-7000",
+                "Insta: https://www.instagram.com/ruhiskitchenon/"
+	            ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Bakee":{
+            "Business Information":[
+                "Phone: 6478251607",
+                "Email: Bhoomika@bakee.ca",
+                "Insta: https://www.instagram.com/Bakee.ca",
+                "Site: https://bakee.ca/"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Roti-kha":{
+            "Business Information":[
+                "Phone: 9056175389, 6475943695"
+    	    ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Fusion spice":{
+            "Business Information":[
+                "Phone: 289-400-5612"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Spice Bazar":{
+            "Business Information":[
+                "Phone: 4378767899",
+                "Insta: https://www.instagram.com/the_spice_bazaar",
+                "Site: https://thespicebazaar.ca/"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Nutritious Kitchen":{
+            "Business Information":[
+                "Phone: 905 783 1651"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "whiskandbakebypayal":{
+            "Business Information":[
+                "Insta: https://www.instagram.com/whiskandbakebypayal"
+	    ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        }
+    },
+    "Retail Services":{
+        "onestopsolutionsfor_sewing":{
+            "Business Information":[
+                "Phone: 3657397990",
+                "Insta: https://www.instagram.com/onestopsolutionsfor_sewing"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Gharowa Boutique":{
+            "Business Information":[
+                "Phone: 6476737623",
+                "Insta: https://www.instagram.com/gharowaboutique"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Simply Panache":{
+            "Business Information":[
+                "Phone: 647-919-9973",
+                "Site: http://simplypanache.ca/"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Quach":{
+            "Business Information":[
+                "Phone: 416 432 6567",
+                "Email: quachtiespins@gmail.com",
+                "FB: https://www.facebook.com/share/1BBxFt69rY/"
+	    ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Dazzling Diays":{
+            "Business Information":[
+                "Phone: 647-994-6928"
+    	    ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        }
+    },
+    "Spiritual and Holistic Services":{
+        "Happy Aura":{
+            "Business Information":[
+                "Insta: https://www.instagram.com/happyaura.ca"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        }
+    },
+    "Digital Marketing":{
+        "Onwards Marketing":{
+            "Business Information":[
+                "Phone: 647 671 5590",
+                "Insta: https://www.instagram.com/onwards_marketing/",
+                "Site: http://www.onwardsmarketing.ca/"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Brandlogy":{
+            "Business Information":[
+                "Phone: 3658898790",
+                "Insta: https://www.instagram.com/brandlogy_marketing_services"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        }
+    },
+    "Professional HealthCare": {
+        "Grand Oaks Orthodontics":{
+            "Business Information":[
+                "Phone: 9055991613, 2897258200",
+                "Insta: https://www.instagram.com/grandoaksortho/"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Naturelife Health Centre":{
+            "Business Information":[
+                "Phone: 905 827 9968",
+                "Site: https://www.naturelifeoakville.ca/",
+                "Insta: https://www.instagram.com/naturelifehealthcentre/"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Navneet Nagpal":{
+            "Business Information":[
+                "Phone: 647 338 9096",
+                "Site: https://www.naturelifeoakville.ca/navneet-nagpal/"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        },
+        "Dentistry@ preserve":{
+            "Business Information":[
+                "Phone: 647 779 8599",
+                "Site: https://www.preservedental.ca/about-us/dr-anshu-grewal/"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
+        }
+    },
+    "Adult Learing and Fun Activities": {
+        "Malini's Art Studio":{
+            "Business Information":[
+                "Phone: 437-220-8336",
+                "Insta: https://www.instagram.com/malinisartstudio"
+	        ],
+            "Recommendations":{
+                "Positive":[],
+                "Negative":[]
+            },
+            "Suggestions":[]
         }
     }
 }
