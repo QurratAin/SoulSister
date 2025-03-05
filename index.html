@@ -112,10 +112,8 @@
 <body>
     <div class="sidebar">
         <h2 onclick="showWelcome()">Soulful Business Circle</h2>
-        <ul>
-            {% for category, businesses in data.items() %}
-                <li><a href="#" onclick="showCategory('{{ category }}')">{{ category }}</a></li>
-            {% endfor %}
+        <ul id="sidebar-list">
+            <!-- Categories will be dynamically populated here -->
         </ul>
     </div>
     <div class="main-content">
@@ -132,10 +130,17 @@
     </div>
 
     <script>
-        // Embed JSON data as a string and parse it into a JavaScript object
-        const jsonData = JSON.parse(`{{ data | tojson | safe }}`);
-
+        let jsonData = {}; // To store the loaded JSON data
         let selectedBusiness = null; // Track the currently selected business
+
+        // Fetch the JSON data from the file
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                jsonData = data; // Store the data
+                populateSidebar(); // Populate the sidebar with categories
+            })
+            .catch(error => console.error('Error loading JSON:', error));
 
         // Show welcome message by default
         showWelcome();
@@ -156,6 +161,22 @@
 
             // Reset selected business
             selectedBusiness = null;
+        }
+
+        function populateSidebar() {
+            const sidebarList = document.getElementById('sidebar-list');
+            sidebarList.innerHTML = ''; // Clear existing items
+
+            // Add categories to the sidebar
+            for (const category in jsonData) {
+                const listItem = document.createElement('li');
+                const link = document.createElement('a');
+                link.href = '#';
+                link.textContent = category;
+                link.onclick = () => showCategory(category);
+                listItem.appendChild(link);
+                sidebarList.appendChild(listItem);
+            }
         }
 
         function showCategory(category) {
