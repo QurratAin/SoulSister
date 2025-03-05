@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soulful Business Circle</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #ffffff; /* Light grey background */
+            color: #000000;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #e4e4e4; 
+            color: #003200;
+            height: 100vh;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: 700; /* Bolder text */
+            cursor: pointer;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .sidebar ul li a {
+            color: #003200;
+            text-decoration: none;
+            font-weight: 600; /* Bolder text */
+            display: block;
+            padding: 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .sidebar ul li a:hover {
+            background-color: #ffffff; /* Black accent */
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .main-content h1 {
+            color: #003200; /* Darker green */
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 700; /* Bolder text */
+        }
+        .business-list {
+            display: none;
+            margin-top: 10px;
+        }
+        .business-header {
+            padding: 10px;
+            background-color: #fff; /* White background */
+            border-left: 4px solid #fffbbc; 
+            cursor: pointer;
+            font-weight: 600; /* Bolder text */
+            margin-bottom: 5px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        .business-header:hover {
+            background-color: #f0f0f0; /* Light grey hover */
+        }
+        .business-details {
+            background-color: #fff; /* White background */
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+            border-radius: 4px;
+            display: none; /* Hide details by default */
+        }
+        .business-details ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .business-details ul li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f8f9fa; /* Light grey background */
+            border-left: 3px solid #6c757d; /* Grey accent */
+            border-radius: 4px;
+        }
+        .business-details h4 {
+            color: #003200; /* Darker green */
+            margin-top: 0;
+            font-weight: 700; /* Bolder text */
+        }
+        .welcome-message {
+            text-align: center;
+            color: #003200; /* Darker green */
+            font-size: 1.5rem;
+            margin-top: 50px;
+            font-weight: 700; /* Bolder text */
+        }
+    </style>
+    <!-- Add Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <h2 onclick="showWelcome()">Soulful Business Circle</h2>
+        <ul>
+            {% for category, businesses in data.items() %}
+                <li><a href="#" onclick="showCategory('{{ category }}')">{{ category }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1 id="category-title"></h1>
+        <div id="business-list" class="business-list">
+            <!-- Business list will be dynamically populated here -->
+        </div>
+        <div id="business-details" class="business-details">
+            <!-- Business details will be dynamically populated here -->
+        </div>
+        <div id="welcome-message" class="welcome-message">
+            Welcome to Soulful Business Circle!
+        </div>
+    </div>
+
+    <script>
+        // Embed JSON data as a string and parse it into a JavaScript object
+        const jsonData = JSON.parse(`{{ data | tojson | safe }}`);
+
+        let selectedBusiness = null; // Track the currently selected business
+
+        // Show welcome message by default
+        showWelcome();
+
+        function showWelcome() {
+            const categoryTitle = document.getElementById('category-title');
+            const businessList = document.getElementById('business-list');
+            const businessDetails = document.getElementById('business-details');
+            const welcomeMessage = document.getElementById('welcome-message');
+
+            // Hide business list and details
+            businessList.style.display = 'none';
+            businessDetails.style.display = 'none';
+
+            // Show welcome message
+            welcomeMessage.style.display = 'block';
+            categoryTitle.textContent = '';
+
+            // Reset selected business
+            selectedBusiness = null;
+        }
+
+        function showCategory(category) {
+            const categoryTitle = document.getElementById('category-title');
+            const businessList = document.getElementById('business-list');
+            const businessDetails = document.getElementById('business-details');
+            const welcomeMessage = document.getElementById('welcome-message');
+
+            // Hide welcome message
+            welcomeMessage.style.display = 'none';
+
+            // Update the category title
+            categoryTitle.textContent = category;
+
+            // Clear previous business list and details
+            businessList.innerHTML = '';
+            businessDetails.innerHTML = '';
+
+            // Populate the business list
+            const businesses = jsonData[category];
+            for (const business in businesses) {
+                const businessHeader = document.createElement('div');
+                businessHeader.className = 'business-header';
+                businessHeader.textContent = business;
+                businessHeader.onclick = () => toggleBusinessDetails(category, business);
+                businessList.appendChild(businessHeader);
+            }
+
+            // Show the business list
+            businessList.style.display = 'block';
+
+            // Hide business details initially
+            businessDetails.style.display = 'none';
+        }
+
+        function toggleBusinessDetails(category, business) {
+            const businessDetails = document.getElementById('business-details');
+
+            // If the same business is clicked again, collapse its details
+            if (selectedBusiness === `${category}-${business}`) {
+                businessDetails.style.display = 'none';
+                selectedBusiness = null;
+                return;
+            }
+
+            // Update selected business
+            selectedBusiness = `${category}-${business}`;
+
+            // Clear previous details
+            businessDetails.innerHTML = '';
+
+            // Add business information
+            const details = jsonData[category][business];
+            if (details['Business Information']) {
+                const infoHeader = document.createElement('h4');
+                infoHeader.textContent = 'Business Information';
+                businessDetails.appendChild(infoHeader);
+
+                const infoList = document.createElement('ul');
+                details['Business Information'].forEach(info => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = info;
+                    infoList.appendChild(listItem);
+                });
+                businessDetails.appendChild(infoList);
+            }
+
+            // Add recommendations
+            const recommendationsHeader = document.createElement('h4');
+            recommendationsHeader.textContent = 'Recommendations';
+            businessDetails.appendChild(recommendationsHeader);
+
+            const recommendationsList = document.createElement('ul');
+            const positiveList = document.createElement('li');
+            positiveList.innerHTML = '<strong>Positive:</strong>';
+            const positiveSubList = document.createElement('ul');
+            details['Recommendations']['Positive'].forEach(recommendation => {
+                const listItem = document.createElement('li');
+                listItem.textContent = recommendation;
+                positiveSubList.appendChild(listItem);
+            });
+            positiveList.appendChild(positiveSubList);
+            recommendationsList.appendChild(positiveList);
+
+            const negativeList = document.createElement('li');
+            negativeList.innerHTML = '<strong>Negative:</strong>';
+            const negativeSubList = document.createElement('ul');
+            details['Recommendations']['Negative'].forEach(recommendation => {
+                const listItem = document.createElement('li');
+                listItem.textContent = recommendation;
+                negativeSubList.appendChild(listItem);
+            });
+            negativeList.appendChild(negativeSubList);
+            recommendationsList.appendChild(negativeList);
+
+            businessDetails.appendChild(recommendationsList);
+
+            // Add suggestions
+            const suggestionsHeader = document.createElement('h4');
+            suggestionsHeader.textContent = 'Suggestions';
+            businessDetails.appendChild(suggestionsHeader);
+
+            const suggestionsList = document.createElement('ul');
+            details['Suggestions'].forEach(suggestion => {
+                const listItem = document.createElement('li');
+                listItem.textContent = suggestion;
+                suggestionsList.appendChild(listItem);
+            });
+            businessDetails.appendChild(suggestionsList);
+
+            // Show the business details
+            businessDetails.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
